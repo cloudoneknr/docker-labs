@@ -18,7 +18,6 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v2
         with:
-          context: hitcount
-          file: Dockerfile
+          file: ./hitcount/Dockerfile
           push: true
           tags: cloudoneknr/getting-started:v1.0
