@@ -21,4 +21,4 @@ jobs:
         with:
           file: ./hitcount/Dockerfile
           push: true
-          tags: cloudoneknr/hitcount:v1.0
+          tags: "cloudoneknr/hitcount:v1.0"
