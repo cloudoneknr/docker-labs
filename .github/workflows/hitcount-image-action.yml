@@ -13,7 +13,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          registry: cloudoneknr/hitcount
+          registry: hub.docker.com/cloudoneknr
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
@@ -22,4 +22,4 @@ jobs:
         with:
           file: ./hitcount/Dockerfile
           push: true
-          tags: cloudoneknr/hitcount:v1.0
+          tags: hitcount:v1.0
